@@ -110,6 +110,7 @@ h3 {
 #projects-box{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* img{
@@ -120,6 +121,7 @@ h3 {
 .projects:hover {
     opacity: 0.6;
     transition: opacity .55s ease-in-out;
+    transform: scale(1.5);
 }
 
 figcaption{
@@ -173,17 +175,30 @@ a {
         right: auto;
         margin: auto;
     }
+
+    a{
+        padding: 2px;
+    }
+
+    .contact{
+        padding: 2px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     #about-me {
-        width: 100%;
+        width: 95%;
         height: auto;
         left: auto;
         right: auto;
         margin: auto;
     }
+
     a {
+        padding: 2px;
+    }
+
+    .contact{
         padding: 2px;
     }
 }
