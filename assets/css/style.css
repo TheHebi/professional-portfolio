@@ -52,30 +52,50 @@ nav .btns {
   }
 
 /* side text*/
-h2, h3 {
+h2{
+    font-family: serif;
+    background: purple;
+    font-size: 50px;
+    color: white;
+    margin: 5px;
+    padding-bottom: 30px;
+    border-bottom: solid 5px black;
+}
+
+h3 {
     font-family: serif;
     background: purple;
     font-size: 50px;
     color: white;
     margin: 5px;
     padding: 30px;
-    border-bottom: 3px solid black;
+    border-bottom: 5px solid black;
 }
 
 /* about me section */
+#headshot {
+  float: left;
+  position: relative;
+  border: 1.5px solid black;
+  margin: 5px;
+}
+
 #about-me{
     line-height: 1.5;
     background-color: purple;
     color: white;
     width: 75%;
-    display: block;
+    height: auto;
+    display: flex;
+    flex-direction: row;
     margin: 10px;
     padding: 3px;
     position: relative;
     left: 200px;
     border: 3px solid black;
-    
+    height: 160px;
 }
+
 
 /* projects properties */
 .projects {
@@ -83,6 +103,8 @@ h2, h3 {
     margin: 15px;
     padding: 5px;
     border: dashed black;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
 
 #projects-box{
@@ -90,12 +112,12 @@ h2, h3 {
     flex-wrap: wrap;
 }
 
-img{
+/* img{
     opacity: 1;
     transition: opacity 1s ease-in-out;
-}
+} */
 
-img:hover {
+.projects:hover {
     opacity: 0.6;
     transition: opacity .55s ease-in-out;
 }
@@ -113,8 +135,12 @@ footer{
       display: block;
 }
 
-h6 {
+h5 {
     font-size: 35px;
+    color: white;
+}
+
+h6 {
     color: white;
 }
 
@@ -140,14 +166,24 @@ a {
 }
 
 @media screen and (max-width: 992px) {
-    
+    #about-me {
+        width: 75%;
+        height: auto;
+        left: auto;
+        right: auto;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 768px) {
     #about-me {
         width: 100%;
+        height: auto;
         left: auto;
         right: auto;
         margin: auto;
+    }
+    .btns a{
+        padding: 2px;
     }
 }
