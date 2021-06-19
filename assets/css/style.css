@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    background: teal;
 }
 
 header {
@@ -29,8 +30,8 @@ header {
     display: inline-block;
     text-align: center;
     padding: 15px;
-    margin-right: 25px;
-    margin-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
  }
 
 /* .btns:hover , .btns:active {
@@ -58,7 +59,7 @@ h2, h3 {
     color: white;
     margin: 5px;
     padding: 30px;
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid black;
 }
 
 /* about me section */
@@ -72,6 +73,7 @@ h2, h3 {
     padding: 3px;
     position: relative;
     left: 200px;
+    border: 3px solid black;
     
 }
 
@@ -100,6 +102,7 @@ img:hover {
 
 figcaption{
     text-align: center;
+    color: white;
 }
 
   /* footer properties */
@@ -112,6 +115,7 @@ footer{
 
 h6 {
     font-size: 35px;
+    color: white;
 }
 
 #footer-btns {
@@ -140,5 +144,10 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-    
+    #about-me {
+        width: 100%;
+        left: auto;
+        right: auto;
+        margin: auto;
+    }
 }
