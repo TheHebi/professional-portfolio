@@ -1,13 +1,20 @@
+:root {
+    --primary: #cfc7af;
+    --backdrop: #cbc4dd;
+    --btn-backdrop: #943d24;
+    --text: black;
+
+}
 body {
     position: relative;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: teal;
+    background: var(--primary);
 }
 
 header {
-    background: purple;
+    background: var(--backdrop);
     border: 3px solid black;
     margin: 15px;
     height: 100px;
@@ -15,7 +22,7 @@ header {
 
 .name {
     font-size: 50px;
-    color: white;
+    color: var(--text);
     font-weight: bold;
     font-family: serif;
 
@@ -23,7 +30,7 @@ header {
 
 /* link properties */
 .btns a {
-    background-color: #f44336;
+    background-color: var(--btn-backdrop);
     color: white;
     padding: 14px 25px;
     text-decoration: none;
@@ -54,9 +61,9 @@ nav .btns {
 /* side text*/
 h2{
     font-family: serif;
-    background: purple;
+    background: var(--backdrop);
     font-size: 50px;
-    color: white;
+    color: var(--text);
     margin: 5px;
     padding-bottom: 30px;
     border-bottom: solid 5px black;
@@ -64,9 +71,9 @@ h2{
 
 h3 {
     font-family: serif;
-    background: purple;
+    background: var(--backdrop);
     font-size: 50px;
-    color: white;
+    color: var(--text);
     margin: 5px;
     padding: 30px;
     border-bottom: 5px solid black;
@@ -82,8 +89,8 @@ h3 {
 
 #about-me{
     line-height: 1.5;
-    background-color: purple;
-    color: white;
+    background-color: var(--backdrop);
+    color: var(--text);
     width: 75%;
     height: auto;
     display: flex;
@@ -126,12 +133,12 @@ h3 {
 
 figcaption{
     text-align: center;
-    color: white;
+    color: var(--text);
 }
 
   /* footer properties */
 footer{
-      background: purple;
+      background: var(--backdrop);
       border: 3px solid black;
       margin: 15px;
       display: block;
@@ -139,11 +146,11 @@ footer{
 
 h5 {
     font-size: 35px;
-    color: white;
+    color: var(--text);
 }
 
 h6 {
-    color: white;
+    color: var(--text);
 }
 
 #footer-btns {
@@ -152,7 +159,7 @@ h6 {
 }
 
 .contact {
-    background-color:#f44336;
+    background-color:var(--btn-backdrop);
     color: white;
     padding: 14px 25px;
     text-decoration: none;
