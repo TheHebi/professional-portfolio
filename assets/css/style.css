@@ -51,6 +51,8 @@ nav {
     padding: 0;
     margin: 0;
     float: right;
+    display: flex;
+    flex-wrap: wrap;
   }
   
 nav .btns {
@@ -156,6 +158,8 @@ h6 {
 #footer-btns {
     display: flex;
     justify-content: center;
+    /* flex-wrap: wrap; */
+    margin: auto;
 }
 
 .contact {
@@ -187,9 +191,10 @@ a {
         padding: 2px;
     }
 
-    .contact{
+    /* .contact{
         padding: 2px;
-    }
+        margin: auto;
+    } */
 }
 
 @media screen and (max-width: 768px) {
@@ -206,6 +211,8 @@ a {
     }
 
     .contact{
-        padding: 2px;
+        padding: 5px;
+        margin: 10px;
+        transition: .5s;
     }
 }
