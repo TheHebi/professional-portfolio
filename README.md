@@ -4,7 +4,7 @@ The goal of this project is to create a professional portfolio that I can mainta
 
 The "Coming Soon" image can be found at https://pixabay.com/photos/coming-soon-chalk-board-blackboard-2550190/
 
-Hosted at: https://github.com/TheHebi/professional-portfolio/commits/main
+Hosted at: https://thehebi.github.io/professional-portfolio/
 
 <strong>Wireframe</strong>
 
